@@ -4,4 +4,41 @@ body {
     padding: 0;
     background-color: #f9f9f9;
   }
+<<<<<<< HEAD
+=======
+
+/* Stil implicit pentru li */
+.custom-li {
+  background-color: #212529; /* Culoare gri deschis, similar cu MiniReddit */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Tranziții lină pentru hover */
+}
+
+/* Fundal mai deschis la hover */
+.custom-li:hover {
+  background-color: #2d3236; /* Fundal puțin mai deschis */
+  color: black;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  transform: scale(1.02); /* Mică scalare pentru efect */
+}
+
+/* Fundal mai deschis la click */
+.custom-li:active {
+  background-color: #40464b; /* Fundal și mai deschis la click */
+  color: black;
+  transform: scale(0.98); /* Ușor efect de apăsare */
+}
+
+/* Linkurile din li */
+.custom-li .nav-link {
+  text-decoration: none; /* Fără subliniere */
+  font-weight: bold; /* Text îngroșat */
+}
+
+/* Linkuri la hover */
+.custom-li .nav-link:hover {
+  color: #40464b; /* Text mai proeminent */
+}
+
+>>>>>>> fcd7c4a (added major stuff)
  
