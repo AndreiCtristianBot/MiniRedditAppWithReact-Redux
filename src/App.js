@@ -11,7 +11,7 @@ import { fetchPosts } from './features/redditSlice';
 
 function App() {
   const dispatch = useDispatch();
-  const { posts, isLoading, error } = useSelector((state) => state.reddit);
+  const { isLoading, error } = useSelector((state) => state.reddit);
   const [filterOption, setFilterOption] = useState('newest');
   const [searchTerm, setSearchTerm] = useState('');
 
