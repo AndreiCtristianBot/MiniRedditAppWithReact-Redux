@@ -1,26 +1,12 @@
-<<<<<<< HEAD
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-=======
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
->>>>>>> fcd7c4a (added major stuff)
 import NavBar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import CategoryPage from './pages/CategoryPage';
 import PostDetailsPage from './pages/PostDetailsPage';
 import AboutPage from './pages/AboutPage';
-<<<<<<< HEAD
-
-function App() {
-  return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-=======
 import { fetchPosts } from './features/redditSlice';
 
 function App() {
@@ -94,7 +80,6 @@ function App() {
             />
           }
         />
->>>>>>> fcd7c4a (added major stuff)
         <Route path="/category/:category" element={<CategoryPage />} />
         <Route path="/post/:id" element={<PostDetailsPage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -105,22 +90,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
-
->>>>>>> fcd7c4a (added major stuff)

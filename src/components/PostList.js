@@ -45,13 +45,6 @@ function PostCard({ post, handleToggleComments, dispatch }) {
     <div className="col-md-6 mb-4">
       <div className="card">
         <p
-<<<<<<< HEAD
-              className="text-dark font-italic"
-              style={{ fontSize: '18px', textAlign: 'center', fontFamily: 'Tahoma'}}
-            > <br></br>
-              {post.author ? `Posted by: ${post.author}` : 'Unknown Author'}
-            </p>
-=======
           className="text-dark font-italic"
           style={{ fontSize: '18px', textAlign: 'center', fontFamily: 'Tahoma' }}
         >
@@ -61,7 +54,6 @@ function PostCard({ post, handleToggleComments, dispatch }) {
         <p className="text-muted text-center" style={{ marginTop: '-10px' }}>
           <small>Posted on: {new Date(post.created).toLocaleDateString()} at {new Date(post.created).toLocaleTimeString('en-US')}</small>
         </p>
->>>>>>> fcd7c4a (added major stuff)
         <hr />
         {!imageError ? (
           <img
@@ -77,36 +69,25 @@ function PostCard({ post, handleToggleComments, dispatch }) {
         )}
         <div className="card-body">
           <h5 className="card-title">{post.title}</h5>
-<<<<<<< HEAD
-=======
           <p className="card-text">
             <strong>Views:</strong> {post.views}
           </p>
->>>>>>> fcd7c4a (added major stuff)
           <Link to={`/post/${post.id}`} className="btn btn-primary">
             Read More
           </Link>
           <div className="mt-3 d-flex justify-content-between align-items-center">
             <button
-<<<<<<< HEAD
-              className={`btn ${post.userInteraction === 'like' ? 'btn-success' : 'btn-outline-success'}`}
-=======
               className={`btn ${
                 post.userInteraction === 'like' ? 'btn-success' : 'btn-outline-success'
               }`}
->>>>>>> fcd7c4a (added major stuff)
               onClick={() => dispatch(likePost(post.id))}
             >
               👍 Like ({post.likes})
             </button>
             <button
-<<<<<<< HEAD
-              className={`btn ${post.userInteraction === 'dislike' ? 'btn-danger' : 'btn-outline-danger'}`}
-=======
               className={`btn ${
                 post.userInteraction === 'dislike' ? 'btn-danger' : 'btn-outline-danger'
               }`}
->>>>>>> fcd7c4a (added major stuff)
               onClick={() => dispatch(dislikePost(post.id))}
             >
               👎 Dislike
@@ -149,7 +130,6 @@ function PostCard({ post, handleToggleComments, dispatch }) {
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> fcd7c4a (added major stuff)
+
+
